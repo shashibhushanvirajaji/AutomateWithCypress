@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-03-13T05:09:02.734Z",
+    "end": "2022-03-13T05:09:28.199Z",
+    "duration": 25465,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "bff43667-b2da-4b1d-bc7e-a8aa324a47e0",
+      "title": "",
+      "fullFile": "cypress/integration/CommandLineSuite/Failedtc.spec.js",
+      "file": "cypress/integration/CommandLineSuite/Failedtc.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1210d6e5-15a5-4b08-b7f3-5635a5392870",
+          "title": " wantedlt failing",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "wanted",
+              "fullTitle": " wantedlt failing wanted",
+              "timedOut": null,
+              "duration": 24120,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"\\\\Failedtc.spec.js\\\\ wantedlt failing -- wanted (failed).png\"\n      }\n    ]\n  ]\n}",
+              "code": "cy.visit('https://www.google.co.in/');\ncy.url().should('include', 'Google');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected 'https://www.google.co.in/' to include 'Google'",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected 'https://www.google.co.in/' to include 'Google'\n    at Context.eval (https://www.google.co.in/__cypress/tests?p=cypress\\integration\\CommandLineSuite\\Failedtc.spec.js:102:14)",
+                "diff": null
+              },
+              "uuid": "4d296d8d-c50c-4c8c-b2ef-639150a1b957",
+              "parentUUID": "1210d6e5-15a5-4b08-b7f3-5635a5392870",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "4d296d8d-c50c-4c8c-b2ef-639150a1b957"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 24120,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\report\\.jsons",
+        "charts": true,
+        "reportPageTitle": "AutomationReport",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.1.1"
+    }
+  }
+}

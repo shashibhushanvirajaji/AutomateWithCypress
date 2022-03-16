@@ -1,0 +1,17 @@
+{
+    "$schema": "https://on.cypress.io/cypress.schema.json",  
+    "chromeWebSecurity": false,
+    "baseUrl": "https://www.google.co.in",
+    "defaultCommandTimeout": 10000,    
+    "integrationFolder": "cypress/integration/CommandLineSuite",
+    "video": false,
+    "screenshotOnRunFailure": true,
+    "reporter": "cypress-mochawesome-reporter",
+    "reporterOptions": {
+        "reportDir": "cypress/report",
+        "charts": true,
+        "reportPageTitle": "AutomationReport",
+        "overwrite":true
+      }
+
+}

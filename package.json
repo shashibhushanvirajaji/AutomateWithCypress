@@ -1,0 +1,26 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:run": "cypress run --env allure=true",
+    "allure:report": "allure generate allure-results --clean -o allure-reports",
+    "allure:clear": "if exist allure-results rmdir /q /s allure-results && if exist allure-report rmdir /q /s allure-report & if exist cypress\\screenshots rmdir /q /s cypress\\screenshots && if exist cypress\\videos rmdir /q /s cypress\\videos",
+    "pretest": "npm run allure:clear",
+    "test": "npm run cy:run || npm run posttest",
+    "posttest": "npm run allure:report"
+  },
+  "author": "shashi",
+  "license": "ISC",
+  "dependencies": {
+    "@shelex/cypress-allure-plugin": "^2.26.5",
+    "allure-commandline": "^2.17.2",
+    "axe-core": "^4.4.1",
+    "cypress": "^9.5.0",
+    "cypress-axe": "^0.14.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-mochawesome-reporter": "^3.0.0",
+    "cypress-xpath": "^1.6.2"
+  }
+}

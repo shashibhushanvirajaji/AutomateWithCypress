@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-03-14T03:10:20.129Z",
+    "end": "2022-03-14T03:10:20.377Z",
+    "duration": 248,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "24f9a3ff-e1ca-4a9a-83c4-77281706252c",
+      "title": "",
+      "fullFile": "cypress/integration/CommandLineSuite/HandlingTestData.spec.js",
+      "file": "cypress/integration/CommandLineSuite/HandlingTestData.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "bfe6a214-22b7-4fca-b28f-dac59c2e0a68",
+          "title": "reading multiple set of data from same file",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "reading multiple set of data from same file",
+              "fullTitle": "reading multiple set of data from same file reading multiple set of data from same file",
+              "timedOut": null,
+              "duration": 185,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('example1').then(userDetails => {\n  userDetails.forEach(userDetail => {\n    cy.log(userDetail.name);\n    cy.log(userDetail.password);\n    cy.log(userDetail.company);\n  });\n});",
+              "err": {},
+              "uuid": "32a97281-848f-4171-9dbc-19739a2eb2e7",
+              "parentUUID": "bfe6a214-22b7-4fca-b28f-dac59c2e0a68",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "32a97281-848f-4171-9dbc-19739a2eb2e7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 185,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\report\\.jsons",
+        "charts": true,
+        "reportPageTitle": "AutomationReport",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.1.1"
+    }
+  }
+}
