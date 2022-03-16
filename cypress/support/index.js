@@ -19,6 +19,7 @@ import '@shelex/cypress-allure-plugin';
 require('cypress-xpath')
 import 'cypress-mochawesome-reporter/register';
 import 'cypress-axe'
+import '@bahmutov/cy-api'
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 Cypress.on('uncaught:exception', (err, runnable) => {

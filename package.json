@@ -22,5 +22,8 @@
     "cypress-file-upload": "^5.0.8",
     "cypress-mochawesome-reporter": "^3.0.0",
     "cypress-xpath": "^1.6.2"
+  },
+  "devDependencies": {
+    "@bahmutov/cy-api": "^2.1.2"
   }
 }

@@ -3,7 +3,7 @@
     "chromeWebSecurity": false,
     "baseUrl": "https://www.google.co.in",
     "defaultCommandTimeout": 10000,    
-    "integrationFolder": "cypress/integration/CommandLineSuite",
+    "integrationFolder": "cypress/integration",
     "video": false,
     "screenshotOnRunFailure": true,
     "reporter": "cypress-mochawesome-reporter",
