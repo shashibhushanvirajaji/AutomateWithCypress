@@ -1,3 +1,4 @@
+
 describe('using get api call',()=>{
 
     it.skip('fetching all users',()=>{
@@ -8,7 +9,7 @@ describe('using get api call',()=>{
             expect(response.status).to.be.equal(200)
         })
     })
-    it.only('fetching all users using cy api',()=>{
+    it.skip('fetching all users using query parameter cy api',()=>{
         cy.api({
             url:"https://reqres.in/api/users",
             method:"GET",
@@ -16,6 +17,14 @@ describe('using get api call',()=>{
                 page:2
             }            
         }).then((response)=>{
+            expect(response.status).to.be.equal(200)
+        })
+    })
+    it.only('fetching data using path parameter',()=>{
+        cy.api({
+            url:"https://reqres.in/api/users/2",
+            method:"GET"
+        }).then(resp=>{
             expect(response.status).to.be.equal(200)
         })
     })
